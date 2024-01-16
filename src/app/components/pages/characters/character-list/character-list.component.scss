@@ -1,0 +1,71 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.grid-item {
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.card {
+    background-color: #403e3e;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: inset;
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.not-found-message {
+    text-align: center;
+}
+
+.go-up-button {
+    background-color: #403e3e;
+    color: wheat;
+    border: 1px solid wheat;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    visibility: visible;
+}
+
+.go-up-button:hover {
+    background-color: wheat;
+    color: black;
+}
+
+.card-inner {
+    padding: 1rem;
+    background-color: #403e3e;
+    border: 1px solid #403e3e;
+    color: white;
+}
+
+.text-muted {
+    color: #bbbaba;
+    font-weight: 400;
+}
+
+.header {
+    white-space: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+}

@@ -1,0 +1,6 @@
+<div class="container" *ngIf="character$ | async as character">
+    <div class="grid-item">
+        <app-character [character]="character" [detail]="detail"></app-character>
+    </div>
+</div>
+<button type="button" class="go-up-button" (click)="onGoBack()">Back</button>

@@ -1,0 +1,85 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin: 0;
+}
+
+.grid-item {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.card {
+    background-color: #403e3e;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: inset;
+}
+
+.card-image {
+    width: 100%;
+    height: 80%;
+    border-radius: 25px;
+}
+
+.not-found-message {
+    text-align: center;
+}
+
+.go-up-button {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 30vh;
+    right: 30vw;
+}
+
+.card-inner {
+    padding: 0;
+    background-color: #403e3e;
+    border: 1px solid #403e3e;
+    color: white;
+}
+
+.text-muted {
+    color: #bbbaba;
+    font-weight: 400;
+}
+
+.header {
+    white-space: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+}
+
+h2 {
+    margin: 0 !important;
+}
+
+h4 {
+    margin: 2px;
+}
+
+.containerGD {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.go-up-button:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: opacify($color: #403e3e, $amount: 1);
+    color: whitesmoke;
+}

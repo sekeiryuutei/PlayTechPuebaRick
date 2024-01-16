@@ -1,0 +1,24 @@
+<header>
+    <nav class="main-nav">
+        <div id="toggle-menu" class="toggle-menu">
+            <label for="toggle-menu-checkbox">
+                <img src="assets/iconos/menu_2976215.png" alt="Hamburger Icon">
+            </label>
+        </div>
+        <input type="checkbox" class="toggle-menu__checkbox" id="toggle-menu-checkbox" />
+        <ul id="main-menu" class="main-menu">
+            <li class="main-menu__item">
+                <a class="navbar-brand" routerLink="/">
+                    <span class="text-danger">Search </span> Rick && Morty
+                </a>
+            </li>
+            <li class="main-menu__item">
+                <a href="#" class="main-menu__link">Home</a>
+            </li>
+            <div class="search-container">
+                <app-form-search></app-form-search>
+            </div>
+        </ul>
+
+    </nav>
+</header>

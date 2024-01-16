@@ -1,0 +1,14 @@
+.form-control-lg {
+    height: 2.25rem;
+    width: 20rem;
+    border-radius: 0.3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .form-control-lg {
+        height: 2.25rem;
+        width: 20rem;
+        border-radius: 0.3rem;
+        margin-bottom: 5px;
+    }
+}
