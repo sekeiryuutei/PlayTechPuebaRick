@@ -54,7 +54,6 @@ export class CharacterListComponent implements OnInit {
         this.pageNum = 1;
         this.getCharacterByGender();
         this.getCharacterByQuery();
-
       }
       )
   }

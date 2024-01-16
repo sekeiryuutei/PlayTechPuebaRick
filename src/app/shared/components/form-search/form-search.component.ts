@@ -15,37 +15,45 @@ export class FormSearchComponent implements OnInit {
   estadoCheckboxRecibidoMale: boolean;
   estadoCheckboxRecibidoFemale: boolean;
 
-  recibirInformacionMale(estadoCheckbox: boolean) {
+  recibirInformacionMale(estadoCheckbox: any) {
     this.estadoCheckboxRecibidoMale = estadoCheckbox;
     this.estadoCheckboxRecibidoFemale = false;
-    if (estadoCheckbox) {
+    if (estadoCheckbox === "true") {
       this.router.navigate(['/character-list'], {
         queryParams: { g: 'Male' }
       })
+    } else {
+      this.clearRuote();
     }
-    console.log(estadoCheckbox, "Male");
+    console.log("Buscar Male", estadoCheckbox);
   }
-  recibirInformacionFemale(estadoCheckbox: boolean) {
+  recibirInformacionFemale(estadoCheckbox: any) {
     this.estadoCheckboxRecibidoFemale = estadoCheckbox;
     this.estadoCheckboxRecibidoMale = false;
-    if (estadoCheckbox) {
+    if (estadoCheckbox === 'true') {
       this.router.navigate(['/character-list'], {
         queryParams: { g: 'Female' }
       })
+    } else {
+      this.clearRuote();
     }
-    console.log(estadoCheckbox, "female");
+    // console.log("Buscar Female", estadoCheckbox, estadoCheckbox==='false', typeof estadoCheckbox);
   }
   onSearch(value: string) {
     console.log(value, ">>")
-    if (value && value.length > 3) {
+    if (value && value.length == 0) {
+      this.router.navigate(['/home']);
+    } else {
       this.router.navigate(['/character-list'], {
         queryParams: { q: value }
       })
-    } else if (value.length == 0) {
-      this.router.navigate(['/character-list'], {
-        queryParams: { q: value }
-      })
+
     }
+  }
+  clearRuote() {
+    this.router.navigate(['/character-list'], {
+      queryParams: { q: '' }
+    })
   }
 
 }
